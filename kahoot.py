@@ -56,7 +56,7 @@ def open_kahoot_in_chrome(code, listbox, root, wait_time, nickname, ):
             message = f"Error joining with code: {code}"
             root.after(0, lambda: listbox.insert('end', message))
             driver.quit()
-        elif driver.find_elements(By.CLASS_NAME, "new-podium__Ribbon-sc-1f3tqpx-15"):
+        elif driver.find_elements(By.CLASS_NAME, "new-podium__TopSection-sc-1f3tqpx-4"):
             message = f"Error joining with code: {code}"
             root.after(0, lambda: listbox.insert('end', message))
             driver.quit()

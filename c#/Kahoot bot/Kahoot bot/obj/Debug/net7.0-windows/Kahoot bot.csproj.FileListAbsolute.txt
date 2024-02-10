@@ -1,0 +1,27 @@
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\bin\Debug\net7.0-windows\selenium-manager\linux\selenium-manager
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\bin\Debug\net7.0-windows\selenium-manager\macos\selenium-manager
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\bin\Debug\net7.0-windows\selenium-manager\windows\selenium-manager.exe
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\bin\Debug\net7.0-windows\Kahoot bot.exe
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\bin\Debug\net7.0-windows\Kahoot bot.deps.json
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\bin\Debug\net7.0-windows\Kahoot bot.runtimeconfig.json
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\bin\Debug\net7.0-windows\Kahoot bot.dll
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\bin\Debug\net7.0-windows\Kahoot bot.pdb
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\bin\Debug\net7.0-windows\Newtonsoft.Json.dll
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\bin\Debug\net7.0-windows\WebDriver.dll
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\obj\Debug\net7.0-windows\Kahoot bot.csproj.AssemblyReference.cache
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\obj\Debug\net7.0-windows\Kahoot bot_Content.g.cs
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\obj\Debug\net7.0-windows\Kahoot bot_MarkupCompile.cache
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\obj\Debug\net7.0-windows\Kahoot bot.g.resources
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\obj\Debug\net7.0-windows\Kahoot bot.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\obj\Debug\net7.0-windows\Kahoot bot.AssemblyInfoInputs.cache
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\obj\Debug\net7.0-windows\Kahoot bot.AssemblyInfo.cs
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\obj\Debug\net7.0-windows\Kahoot bot.csproj.CoreCompileInputs.cache
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\obj\Debug\net7.0-windows\Kahoot bot.csproj.CopyComplete
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\obj\Debug\net7.0-windows\Kahoot bot.dll
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\obj\Debug\net7.0-windows\refint\Kahoot bot.dll
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\obj\Debug\net7.0-windows\Kahoot bot.pdb
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\obj\Debug\net7.0-windows\Kahoot bot.genruntimeconfig.cache
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\obj\Debug\net7.0-windows\ref\Kahoot bot.dll
