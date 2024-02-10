@@ -54,7 +54,6 @@ namespace KahootBot
                     {
                         LogListBox1.Items.Add($"Code Found: {randomCode}");
                         LogListBox1.ScrollIntoView(LogListBox1.Items[LogListBox1.Items.Count - 1]);
-                        await Task.Delay(5000 + waitTime * 1000, cancellationToken); // Search Time
                         OpenKahootInBrowser(randomCode, nickname);
                     }
                     else

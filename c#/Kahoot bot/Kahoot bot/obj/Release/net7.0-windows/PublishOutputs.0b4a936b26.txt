@@ -1,0 +1,10 @@
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\bin\Release\net7.0-windows\app.publish\Kahoot bot.exe
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\bin\Release\net7.0-windows\app.publish\selenium-manager\linux\selenium-manager
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\bin\Release\net7.0-windows\app.publish\selenium-manager\macos\selenium-manager
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\bin\Release\net7.0-windows\app.publish\selenium-manager\windows\selenium-manager.exe
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\bin\Release\net7.0-windows\app.publish\Kahoot bot.dll
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\bin\Release\net7.0-windows\app.publish\Kahoot bot.deps.json
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\bin\Release\net7.0-windows\app.publish\Kahoot bot.runtimeconfig.json
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\bin\Release\net7.0-windows\app.publish\Kahoot bot.pdb
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\bin\Release\net7.0-windows\app.publish\Newtonsoft.Json.dll
+C:\Users\Thor Helson\Desktop\Kahoot bot\c#\Kahoot bot\Kahoot bot\bin\Release\net7.0-windows\app.publish\WebDriver.dll
