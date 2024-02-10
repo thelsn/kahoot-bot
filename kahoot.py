@@ -12,61 +12,49 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.common.exceptions import NoSuchElementException
 import time
 
-# Function to open Kahoot in Chrome and enter the code
 def setup_browser():
-    # Set up Chrome options
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument("--incognito")
-
-    # Initialize the WebDriver instance
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=chrome_options)
-
     return driver
 
 def open_kahoot_in_chrome(code, listbox, root, wait_time, nickname, ):
-    # Setup browser inside the function to ensure thread safety
     driver = setup_browser()
-    
-    # Open a new tab
     driver.execute_script("window.open('');")
-    
-    # Switch to the new tab (assumes it is the last one opened)
     driver.switch_to.window(driver.window_handles[-1])
-    
-    # Navigate to Kahoot in the new tab and perform actions
     driver.get("https://kahoot.it/")
-    # Wait for the page to load
+    
     time.sleep(wait_time)
     
     try:
         input_field = driver.find_element(By.ID, "game-input")
         input_field.send_keys(code)
-        
         submit_button = driver.find_element(By.CLASS_NAME, "button__Button-sc-vzgdbz-0")
         submit_button.click()
         
         time.sleep(1.5)
         
+        error_classes = ["namerator__PageWrapper-sc-yvb5ka-0", "network-dialog__Body-sc-s0ocva-0", "join__CollaborationOrTeamModeBadge-sc-1ezg926-2", "two-factor-cards__square-button"]
+        found_error = any(driver.find_elements(By.CLASS_NAME, error_class) for error_class in error_classes)
+
+        if found_error:
+            message = f"Error joining with code: {code}"
+            root.after(0, lambda: listbox.insert('end', message))
+            driver.quit()
+            
         nickname_field = driver.find_element(By.ID, "nickname")
         nickname_field.send_keys(nickname)
-        
         submit_button = driver.find_element(By.CLASS_NAME, "button__Button-sc-vzgdbz-0")
         submit_button.click()
         
         time.sleep(1)
 
-        error_detected = False
-        error_classes = ["gATPEc", "haUqev", "two-factor-cards__square-button"]
-        for error_class in error_classes:
-            if driver.find_elements(By.CLASS_NAME, error_class):
-                error_detected = True
-                message = f"Error joining with code: {code}"
-                root.after(0, lambda: listbox.insert('end', message))
-                driver.quit()
-                break
-        
-        if not error_detected:
+        if driver.find_elements(By.CLASS_NAME, "gATPEc"):
+            message = f"Error joining with code: {code}"
+            root.after(0, lambda: listbox.insert('end', message))
+            driver.quit()
+        else:
             message = f"Success with code: {code}"
             root.after(0, lambda: listbox.insert('end', message))
             time.sleep(1000000)
@@ -76,9 +64,7 @@ def open_kahoot_in_chrome(code, listbox, root, wait_time, nickname, ):
     finally:
         time.sleep(1000000)
         
-
-
-    
+  
 def generate_random_number(length):
     return ''.join(random.choices(string.digits, k=length))
 
@@ -101,8 +87,6 @@ async def request_with_random_number(root, listbox, stop_event, wait_time, nickn
                 Thread(target=lambda: open_kahoot_in_chrome(code, listbox, root, wait_time, nickname)).start()
 
 
-
-# The rest of the setup_gui and start_async_request functions remain the same
 def start_async_request(loop, root, listbox, stop_event, wait_time, nickname):
     asyncio.set_event_loop(loop) 
     loop.run_until_complete(request_with_random_number(root, listbox, stop_event, wait_time, nickname))
@@ -114,15 +98,13 @@ def setup_gui():
     frame = Frame(root)
     frame.pack(fill='both', expand=True)
     
-
-    # Wait time entry
     wait_time_label = Label(frame, text="Wait Time (seconds):")
     wait_time1_label = Label(frame, text="(dont set below 1)")
     wait_time_label.pack(side='top', pady=(5,0))
     wait_time1_label.pack(side='top', pady=(5,0))
     wait_time_entry = Entry(frame)
     wait_time_entry.pack(side='top', pady=(0,5))
-    wait_time_entry.insert(0, "2")  # Default wait time
+    wait_time_entry.insert(0, "2")
     
     nickname_label = Label(frame, text="Nickname:")
     nickname_label.pack(side='top', pady=(5,0))
@@ -130,7 +112,6 @@ def setup_gui():
     nickname_entry.pack(side='top', pady=(0,5))
     nickname_entry.insert(0, "Hacker")
 
-    # Listbox for messages
     listbox = Listbox(frame, height=20, width=50)
     listbox.pack(side='left', fill='y')
     scrollbar = Scrollbar(frame, orient='vertical')
@@ -141,7 +122,6 @@ def setup_gui():
     stop_event = asyncio.Event()
 
     def on_start():
-        # Get wait time and nickname from entries
         wait_time = float(wait_time_entry.get())
         nickname = nickname_entry.get()
         loop = asyncio.new_event_loop()
